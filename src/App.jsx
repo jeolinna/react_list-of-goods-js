@@ -19,18 +19,6 @@ export const App = () => {
   const [activeSort, setActiveSort] = useState('');
   const [reversed, setReversed] = useState(false);
 
-  // if (activeSort) {
-  //   visibleGoods.sort((good1, good2) => good1.length - good2.length);
-  // }
-
-  // const sortByAlphabet = () => {
-  //   setVisibleGoods(
-  //     [...visibleGoods].sort((good1, good2) => good1.localeCompare(good2)),
-  //   );
-
-  //   setActiveSort('alphabetical');
-  // };
-
   const getSortedBy = () => {
     const preparedGoods = [...goodsFromServer];
 
